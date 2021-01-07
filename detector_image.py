@@ -50,4 +50,3 @@ image_np_with_detections[int(height*0.05):int(height*0.05+pl_height), int(height
 
 cv2.imshow("image", image_np_with_detections)
 cv2.waitKey(0)
-
