@@ -20,7 +20,7 @@ parser = argparse.ArgumentParser(
 parser.add_argument(
     "-i", "--img_dir",
     help = "Path to the folder where image is stored",
-    type=str, default="C://Users//"
+    type=str, default=""
 )
 parser.add_argument(
     "-a", "--augment",
@@ -35,7 +35,7 @@ parser.add_argument(
 parser.add_argument(
     "-rp", "--renamepath",
     help = "rename?",
-    type=str, default="C://Users//"
+    type=str, default=""
 )
 parser.add_argument(
     "-rv", "--rename_val",
@@ -52,9 +52,11 @@ RENAME_val= args.rename_val
 
 if AUGMENT is True:
     import Augmentor
+    import random
     p = Augmentor.Pipeline(DEST)
-    p.skew_tilt(0.6, 0.6)
-    p.skew_tilt(0.3, 0.4)
+    p.greyscale(0.2)
+    p.skew_left_right(0.5, 0.2)
+    p.skew_top_bottom(0.5, 0.2)
     p.sample(500)
 
 
