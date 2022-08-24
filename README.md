@@ -1,6 +1,6 @@
 # Mobilenet-SSD-to-detect-License-Plate
-This is a project aimed to detect vehicle licence plates with Mobilenet SSD v2. <br />
-Licence Plate Detector utilizes Tensorflow Object Detection Api.
+This is a project aimed to detect vehicle license plates with Mobilenet SSD v2. <br />
+License Plate Detector utilizes Tensorflow Object Detection Api.
 
 ## Labelling the dataset
 To label the dataeset, I've used [LabelImg](https://github.com/tzutalin/labelImg) <br/>
